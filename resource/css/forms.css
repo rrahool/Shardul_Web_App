@@ -1,0 +1,810 @@
+*{
+    box-sizing: border-box!important;
+}
+
+body{
+    font-size: 20px;
+    font-family: 'Hind Siliguri', sans-serif!important;
+    font-weight: 400;
+    color: #414146;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Hind Siliguri', sans-serif!important;
+}
+
+.signUp_form{
+    overflow: hidden;
+    background-image: url("../img/schoolsport.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.BloodSignUpWrap{
+    background-image: url(../img/donating.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.volSignUpWrap{
+    background-image: url("../img/group.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.volSignUpWrap,
+.BloodSignUpWrap,
+.signUp_form{
+    padding: 20px!important;
+    position: relative;
+    clear: both;
+    min-height: 100vh;
+}
+
+.volSignUpWrap>form,
+.BloodSignUpWrap>form,
+.signUp_form > form{
+    max-width: 500px;
+    margin: 40px auto;
+    margin-top: 20px;
+    padding: 40px 25px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+    clear: both;
+
+}
+
+
+.signUp_form>form>h1{
+    color: dodgerblue;
+    margin-top: 0;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+.BloodSignUpWrap>form>h1{
+    color: tomato;
+    margin-top: 0;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.volSignUpWrap>form>h1{
+    color: #f0ad4e;
+    margin-top: 0;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.signUp_form>form>h1:after{
+    content: '';
+    width: 30%;
+    height: 4px;
+    bottom: -20px;
+    left:35%;
+    position: absolute;
+    background-color: dodgerblue;
+}
+
+.BloodSignUpWrap>form>h1:after{
+    content: '';
+    width: 30%;
+    height: 4px;
+    bottom: -20px;
+    left:35%;
+    position: absolute;
+    background-color: tomato;
+}
+
+.volSignUpWrap>form>h1:after{
+    content: '';
+    width: 30%;
+    height: 4px;
+    bottom: -20px;
+    left:35%;
+    position: absolute;
+    background-color: #f0ad4e;
+}
+
+#editForm .modal-header,
+#AddForm .modal-header{
+    height: 20px;
+    padding: 0;
+}
+#editForm .close,
+#AddForm .close{
+    color: #eee;
+    top:10px;
+    right: 10px;
+    position: absolute;
+}
+
+.AdminRegForm>h1{
+    font-weight:300;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #E67E22;
+    position: relative;
+
+}
+
+.AdminRegForm>h1:after{
+    content: '';
+    width: 30%;
+    height: 4px;
+    bottom: -20px;
+    left:35%;
+    position: absolute;
+    background-color: #E67E22;
+}
+
+.AdminLogin>#Login_message,
+.AdminRegForm>#message,
+.volSignUpWrap>form>#volunteerMsg,
+.BloodSignUpWrap>form>#DonorMsg,
+.signUp_form > form>#message{
+    text-align: center;
+    font-weight: 300;
+}
+.signUp_form > .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:200%;
+    height:200%;
+    background-color: dodgerblue;
+    opacity: .6;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.BloodSignUpWrap > .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background: #E55D87; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E55D87 , #5FC3E4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E55D87 , #5FC3E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: .8;
+    z-index: 1;
+}
+
+
+.volSignUpWrap > .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #DE6262; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #DE6262 , #FFB88C); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #DE6262 , #FFB88C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: .8;
+    z-index: 1;
+}
+.volSignUpWrap>form>h1,
+.BloodSignUpWrap>form>h1,
+.signUp_form > form>h1{
+    text-align: center;
+}
+
+.volSignUpWrap > form>label,
+.BloodSignUpWrap > form>label,
+.signUp_form > form>label{
+    font-size: 1em;
+}
+
+
+.volSignUpWrap >form>input,
+.volSignUpWrap >form>select,
+.volSignUpWrap>form>input[type='text'],
+.BloodSignUpWrap>form>input[type='text'],
+.BloodSignUpWrap>form>input[type="date"],
+.BloodSignUpWrap>form>select,
+.signUp_form>form>select,
+.signUp_form >form>input {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+.volSignUpWrap>form>input,
+.volSignUpWrap>form>input[type="text"],
+.BloodSignUpWrap>form>select,
+.volSignUpWrap>form>select,
+.BloodSignUpWrap>form>input[type='text'],
+.signUp_form>form>select,
+.BloodSignUpWrap>form>input[type="date"],
+.signUp_form>form>input[type="date"],
+.signUp_form>form>input[type="tel"],
+.signUp_form>form>input[type="password"],
+.signUp_form>form>input[type="email"],
+.signUp_form>form>input[type="text"]{
+    -webkit-transition: ease-in all .3s;
+    -moz-transition: ease-in all .3s ;
+    -ms-transition: ease-in all .3s ;
+    -o-transition: ease-in all .3s ;
+    transition: ease-in all .3s ;
+    border:none;
+    outline: none;
+    outline-offset: 0;
+    background-color: #eee;
+}
+
+
+.volSignUpWrap>form>input:focus,
+.BloodSignUpWrap>form>input[type="date"]:focus,
+.BloodSignUpWrap>form>select:focus,
+.volSignUpWrap>form>select:focus,
+.signUp_form>form>select:focus,
+.signUp_form>form>input[type="date"]:focus,
+.signUp_form>form>input[type="tel"]:focus,
+.signUp_form>form>input[type="password"]:focus,
+.signUp_form>form>input[type="email"]:focus,
+.signUp_form>form>input[type="text"]:focus{
+
+    background-color: #fff;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+    -webkit-transition: ease-in all .3s;
+    -moz-transition: ease-in all .3s ;
+    -ms-transition: ease-in all .3s ;
+    -o-transition: ease-in all .3s ;
+    transition: ease-in all .3s ;
+}
+.signUp_form>form>#msg,
+.signUp_form>form>#req{
+    color: dodgerblue;
+    float: right;
+}
+.AdminRegForm>.error,
+.volSignUpWrap >form>.error,
+.BloodSignUpWrap>form>.error,
+.signUp_form>form>.error{
+    color: tomato;
+    font-size: 1.4em;
+}
+
+.error1{
+    font-size: 14px;
+    font-weight: 300;
+}
+#pmassage,#msg{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.signUp_form>form>.next{
+    display: block;
+    float: right;
+    right: 0;
+    bottom: -45px;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    outline-offset: 0;
+    position: absolute;
+    color: #1c1c1c;
+    background-color: #ddd;
+    text-transform: uppercase;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+
+.volSignUpWrap >form>.volunteerPost,
+.BloodSignUpWrap>form>.DonatePost{
+    display: inline-block;
+    max-width: 120px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    outline-offset: 0;
+    background-color: lightseagreen;
+    color: #fff;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+
+
+.volSignUpWrap>form>.volunteerPost:hover,
+.BloodSignUpWrap>form>.DonatePost:hover{
+    background-color: seagreen;
+    box-shadow: 0 0 4px 2px rgba(0,0,0,0.4);
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+.BloodSignUpWrap>form>.prev>i,
+.BloodSignUpWrap>form>.prev>span,
+.volSignUpWrap>form>.prev>i,
+.volSignUpWrap>form>.prev>span{
+    position: relative;
+    z-index: 10;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+.BloodSignUpWrap>form>.prev,
+.volSignUpWrap>form>.prev{
+    position: relative;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    margin: 20px 0;
+    padding: 10px 20px;
+    outline-offset: 0;
+    color: #1c1c1c;
+    background-color: #ddd;
+    text-transform: uppercase;
+    text-decoration: none!important;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+
+.BloodSignUpWrap>form>.prev:after,
+.volSignUpWrap>form>.prev:after{
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top:0;
+    right: 0;
+    background-color: dodgerblue;
+}
+.BloodSignUpWrap>form>.prev:hover span,
+.volSignUpWrap>form>.prev:hover span{
+    color: #fff;
+    padding-left: 10px;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+.BloodSignUpWrap>form>.prev:hover i,
+.volSignUpWrap>form>.prev:hover i{
+    margin-left: -10px;
+    color: #fff;
+    z-index: 10;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+.BloodSignUpWrap>form>.prev:hover:after,
+.volSignUpWrap>form>.prev:hover:after{
+    width: 100%;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+
+.signUp_form>form>.next>i,
+.signUp_form>form>.next>span{
+    position: relative;
+    z-index: 10;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+
+
+.signUp_form>form>.next:after{
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: dodgerblue;
+}
+.signUp_form>form>.next:hover span{
+    color: #fff;
+    padding-right: 10px;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+.signUp_form>form>.next:hover i{
+    margin-right: -10px;
+    color: #fff;
+    z-index: 10;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+.signUp_form>form>.next:hover:after{
+    width: 100%;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+
+/**************************** Admin Forms **********************************/
+#editForm .modal-header, .modal-footer,
+#AddForm .modal-header, .modal-footer{
+    border:none;
+}
+
+#editForm .modal-content,
+#AddForm .modal-content{
+    background-color: #1D1D1D;
+    color: #fff;
+    border:none;
+}
+
+.AdminRegForm{
+    padding: 20px!important;
+    position: relative;
+    clear: both;
+}
+.AdminRegForm>label{
+    color: rgba(255,255,255,.5);
+    font-weight: 300;
+}
+.AdminRegForm{
+    padding: 20px!important;
+    position: relative;
+    clear: both;
+    box-sizing: border-box;
+}
+.AdminRegForm>select,
+.AdminRegForm>input[type="text"],
+.AdminRegForm>input[type="number"],
+.AdminRegForm>input[type="email"],
+.AdminRegForm>input[type="tel"],
+.AdminRegForm>input[type="password"]
+{
+    width: 100%;
+    font-size: 1em;
+    padding: 5px;
+    margin-bottom: 10px;
+    background: #E67E22; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E67E22 , #E67E22); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E67E22 , #E67E22);
+    background-size: 0 2px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    font-weight: 300;
+    -webkit-transition: ease-in all .3s ;
+    -moz-transition: ease-in all .3s ;
+    -ms-transition: ease-in all .3s ;
+    -o-transition: ease-in all .3s ;
+    transition: ease-in all .3s;
+}
+.AdminRegForm>input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255,255,255,.3);
+}
+.AdminRegForm>input::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(255,255,255,.3);
+}
+.AdminRegForm>input:-ms-input-placeholder { /* IE 10+ */
+    color: rgba(255,255,255,.3);
+}
+.AdminRegForm>input:-moz-placeholder { /* Firefox 18- */
+    color: rgba(255,255,255,.3);
+}
+
+
+
+
+.AdminRegForm>input[type="text"]:focus,
+.AdminRegForm>input[type="number"]:focus,
+.AdminRegForm>input[type="email"]:focus,
+.AdminRegForm>input[type="tel"]:focus,
+.AdminRegForm>input[type="password"]:focus{
+    background-size: 100% 2px;
+    -webkit-transition: ease-in all .3s ;
+    -moz-transition: ease-in all .3s ;
+    -ms-transition: ease-in all .3s ;
+    -o-transition: ease-in all .3s ;
+    transition: ease-in all .3s;
+}
+
+.AdminRegForm>.AdminSignUp{
+    background-color: #2c2c2c;
+    border: none;
+    color: rgba(255,255,255,.3);
+    padding: 5px 20px;
+    margin: 20px auto;
+    display:block;
+    position: relative;
+}
+.AdminRegForm>.AdminSignUp>span{
+    position: relative;
+    z-index: 10;
+}
+.AdminRegForm>.AdminSignUp:hover{
+    color: #fff;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+.AdminRegForm>.AdminSignUp:after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: #E67E22;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+.AdminRegForm>.AdminSignUp:hover:after{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+.AdminLogin{
+    max-width: 400px;
+    background-color: #2d2d2d;
+    margin: 25vh auto;
+    clear: both;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+}
+.AdminLoginWrap{
+    width: 100%;
+    min-height: 100vh;
+    max-width: 100vw;
+    position: absolute;
+    background-color: #e3e3e3;
+}
+
+
+.AdminLogin>input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255,255,255,.3);
+}
+.AdminLogin>input::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(255,255,255,.3);
+}
+.AdminLogin>input:-ms-input-placeholder { /* IE 10+ */
+    color: rgba(255,255,255,.3);
+}
+.AdminLogin>input:-moz-placeholder { /* Firefox 18- */
+    color: rgba(255,255,255,.3);
+}
+
+
+
+.AdminLogin>span>i{
+    color:  rgba(255,255,255,.3);
+}
+.AdminLogin>h4{
+    max-width: 200px;
+    color: #E67E22;
+    margin: 40px 0;
+    margin-top:0;
+    position: relative;
+}
+.AdminLogin>h4:after{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    left: 0;
+    background-color: #E67E22;
+    width: 20%;
+    height: 1px;
+}
+
+.AdminLogin>input{
+    width: 90%;
+    background-color: transparent;
+    border:none;
+    outline:0;
+    outline-offset:0;
+    padding: 10px;
+    margin: 10px auto;
+    font-weight: 300;
+    font-size: .8em;
+    border-bottom: 1px solid #1c1c1c;
+}
+
+.AdminLogin>select,
+.AdminLogin>input[type="text"],
+.AdminLogin>input[type="number"],
+.AdminLogin>input[type="email"],
+.AdminLogin>input[type="tel"],
+.AdminLogin>input[type="password"]
+{
+    background: #E67E22; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E67E22 , #E67E22); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E67E22 , #E67E22);
+    background-size: 0 1px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    -webkit-transition: ease-in all .3s ;
+    -moz-transition: ease-in all .3s ;
+    -ms-transition: ease-in all .3s ;
+    -o-transition: ease-in all .3s ;
+    transition: ease-in all .3s;
+}
+
+
+
+.AdminLogin>input[type="text"]:focus,
+.AdminLogin>input[type="number"]:focus,
+.AdminLogin>input[type="email"]:focus,
+.AdminLogin>input[type="tel"]:focus,
+.AdminLogin>input[type="password"]:focus{
+    background-size: 100% 1px;
+    -webkit-transition: ease-in all .3s ;
+    -moz-transition: ease-in all .3s ;
+    -ms-transition: ease-in all .3s ;
+    -o-transition: ease-in all .3s ;
+    transition: ease-in all .3s;
+}
+
+.AdminLogin>.AdminLoginSub{
+    width: 40%;
+    background-color: transparent;
+    border: 1px solid #E67E22;
+    color: #E67E22;
+    border-radius: 20px;
+    font-weight: 300;
+    font-size: .8em;
+    padding: 5px 20px;
+    margin: 20px auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.AdminLogin>.AdminLoginSub>span{
+    position: relative;
+    z-index: 10;
+}
+.AdminLogin>.AdminLoginSub:hover{
+    color: #fff;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+.AdminLogin>.AdminLoginSub:after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: #E67E22;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+.AdminLogin>.AdminLoginSub:hover:after{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: ease-in all .2s ;
+    -moz-transition: ease-in all .2s ;
+    -ms-transition: ease-in all .2s ;
+    -o-transition: ease-in all .2s ;
+    transition: ease-in all .2s ;
+}
+
+
+
+
+
+
+@-webkit-keyframes widthchange {
+    0%{
+        width: 60%;
+    }
+    50%{
+        width: 40%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@-moz-keyframes widthchange {
+    0%{
+        width: 60%;
+    }
+    50%{
+        width: 40%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@-o-keyframes widthchange {
+    0%{
+        width: 60%;
+    }
+    50%{
+        width: 40%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes widthchange {
+    0%{
+        width: 60%;
+    }
+    50%{
+        width: 40%;
+    }
+    100%{
+        width: 60%;
+    }
+}
